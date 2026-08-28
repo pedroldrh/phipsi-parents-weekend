@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ivory: #f6f0df;
+  --color-ivory-deep: #efe6cd;
+  --color-ink: #221d18;
+  --color-cardinal: #bf1e2e;
+  --color-hunter: #3d6b4f;
+  --color-tan: #d9a566;
+  --color-sky: #a8cfe4;
+  --font-display: var(--font-archivo-black);
+  --font-body: var(--font-archivo);
+  --font-script: var(--font-yellowtail);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f0df;
+  color: #221d18;
+  font-family: var(--font-archivo), sans-serif;
+  overflow-x: clip;
+}
+
+::selection {
+  background: #bf1e2e;
+  color: #f6f0df;
+}
+
+/* subtle print-shop paper grain */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 22s linear infinite;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(var(--bob-rot, 0deg)); }
+  50% { transform: translateY(-10px) rotate(var(--bob-rot, 0deg)); }
+}
+
+.bob { animation: bob 3.4s ease-in-out infinite; }
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.spin-slow { animation: spin-slow 14s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track, .bob, .spin-slow { animation: none; }
+}
