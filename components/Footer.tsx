@@ -15,8 +15,8 @@ export default function Footer() {
           Thursday → Saturday · Lexington, Virginia
         </p>
         <p className="mx-auto mt-6 max-w-md text-base font-medium text-ivory/60">
-          Questions, dietary stuff, or breakfast intel? Ask your kid. If they
-          don&apos;t answer (they won&apos;t), ask any brother at the cookout.
+          Questions or dietary notes? Reach out to your student, or ask any of
+          the brothers at the cookout.
         </p>
         <div className="mt-10 flex items-center justify-center gap-6 font-display text-sm uppercase tracking-widest text-ivory/50">
           <span>ΦΚΨ</span>

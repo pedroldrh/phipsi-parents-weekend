@@ -34,7 +34,7 @@ const STOPS: Stop[] = [
     title: "The Cookout",
     place: "The Haus",
     placeNote: "a.k.a. the Phi Psi house",
-    desc: "We kick things off easy: burgers and BBQ on the lawn of the house. Come hungry, meet the brothers, meet the other parents, and inspect where your tuition money sleeps.",
+    desc: "We open the weekend with burgers and BBQ on the lawn at the house. Come hungry — it's the best chance to meet the brothers and the other families.",
     accent: "text-hunter",
     art: (
       <div className="relative">
@@ -45,7 +45,7 @@ const STOPS: Stop[] = [
         />
       </div>
     ),
-    connector: "sleep it off, big day tomorrow →",
+    connector: "day one, done →",
   },
   {
     n: "02",
@@ -53,20 +53,20 @@ const STOPS: Stop[] = [
     when: "Daytime",
     title: "The Darty",
     place: "Pumptown",
-    placeNote: "small party house, big reputation",
-    desc: "A party, but in daylight — so everyone behaves (mostly). Cornhole tournaments, cold drinks, good conversation, and the sing-along pop hits Pump is famous for. Parents have historically dominated the cornhole bracket.",
+    placeNote: "a small party house",
+    desc: "A party in the daylight: cornhole boards out, music on, drinks in the cooler. Outdoors, low-key, and easy to enjoy — parents are very welcome on the boards.",
     accent: "text-cardinal",
     art: <CornholeKid className="bob w-44 md:w-64" />,
-    connector: "early night. trust us →",
+    connector: "one more day →",
   },
   {
     n: "03",
     day: "Saturday",
     when: "Morning",
-    title: "Parents Breakfast?",
+    title: "Parents Breakfast",
     place: "TBD",
-    placeNote: "details loading…",
-    desc: "A proper sit-down breakfast with the parents before the main event. Still being confirmed — hence the question mark. Watch this space (or your kid's texts).",
+    placeNote: "time & place coming soon",
+    desc: "A sit-down breakfast with the parents before the last day kicks off. Still being confirmed — hence the question mark.",
     tbd: true,
     accent: "text-tan",
     art: <PancakeStack className="bob w-40 md:w-56" />,
@@ -79,7 +79,7 @@ const STOPS: Stop[] = [
     title: "The Mashup Bar",
     place: "Pole One",
     placeNote: "the house by the river",
-    desc: "The grand finale: parents and students, together, at the house on the river. BBQ smoke, cold drinks, music mashups, and a sunset over the water. Chill mode: fully engaged.",
+    desc: "The finale: everyone together at the house on the river. BBQ, music, and a sunset over the water to close out the weekend.",
     accent: "text-sky",
     art: (
       <div className="relative">
@@ -110,7 +110,7 @@ function StopScene({ stop, i }: { stop: Stop; i: number }) {
         </motion.div>
       </div>
 
-      <section className="mx-auto grid min-h-[90svh] max-w-6xl grid-cols-1 items-center gap-8 px-6 py-24 pl-20 md:grid-cols-2 md:gap-0 md:px-12 md:pl-12">
+      <section className="mx-auto grid min-h-[90svh] max-w-6xl grid-cols-1 items-center gap-8 px-6 py-24 pl-16 md:grid-cols-2 md:gap-0 md:px-12 md:pl-12">
         {/* text block */}
         <div className={`${flip ? "md:order-2 md:pl-20" : "md:pr-20"}`}>
           <motion.div
@@ -126,7 +126,7 @@ function StopScene({ stop, i }: { stop: Stop; i: number }) {
             <span className="font-script text-2xl text-cardinal">{stop.when}</span>
           </motion.div>
 
-          <h3 className="font-display uppercase leading-[0.95] text-[clamp(2.6rem,6.5vw,5rem)]">
+          <h3 className="font-display uppercase leading-[0.95] text-[clamp(1.9rem,7.5vw,5rem)]">
             <Wiggly text={stop.title} className={stop.accent} />
             {stop.tbd && (
               <motion.span
@@ -179,7 +179,7 @@ function StopScene({ stop, i }: { stop: Stop; i: number }) {
           whileInView={{ opacity: 1, rotate: -3 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 150, damping: 14 }}
-          className="relative z-10 mx-auto w-fit rounded-lg border-2 border-dashed border-ink/40 bg-ivory px-5 py-2 pl-20 font-script text-2xl text-ink/60 md:pl-5"
+          className="relative z-10 mx-auto w-fit max-w-[80vw] rounded-lg border-2 border-dashed border-ink/40 bg-ivory px-5 py-2 font-script text-2xl text-ink/60"
         >
           {stop.connector}
         </motion.p>
@@ -200,8 +200,8 @@ export default function Journey() {
     <div id="plan" ref={ref} className="relative">
       {/* section intro */}
       <div className="mx-auto max-w-4xl px-6 pt-28 pb-10 text-center">
-        <Wiggly text="the game plan" className="font-script text-4xl text-cardinal md:text-5xl" />
-        <h2 className="mt-2 font-display uppercase leading-none text-[clamp(2.8rem,8vw,6.5rem)]">
+        <Wiggly text="the plan" className="font-script text-4xl text-cardinal md:text-5xl" />
+        <h2 className="mt-2 font-display uppercase leading-none text-[clamp(2.1rem,8.5vw,6.5rem)]">
           <Wiggly text="Three Days." />
           <br />
           <Wiggly text="Four Stops." className="text-hunter" delay={0.3} />
@@ -213,8 +213,7 @@ export default function Journey() {
           transition={{ delay: 0.6, type: "spring", stiffness: 100, damping: 14 }}
           className="mx-auto mt-6 max-w-md text-lg font-medium text-ink/70"
         >
-          Scroll to walk the route. Comfortable shoes recommended, embarrassing
-          your kid encouraged.
+          Scroll through the weekend, stop by stop.
         </motion.p>
       </div>
 
@@ -232,7 +231,7 @@ export default function Journey() {
       ))}
 
       {/* finish line */}
-      <div className="relative z-10 mx-auto w-fit px-6 pb-28 pt-10 text-center pl-20 md:pl-6">
+      <div className="relative z-10 mx-auto w-fit px-6 pb-28 pt-10 text-center">
         <motion.div
           initial={{ scale: 0, rotate: 30 }}
           whileInView={{ scale: 1, rotate: -3 }}
@@ -240,7 +239,7 @@ export default function Journey() {
           transition={{ type: "spring", stiffness: 200, damping: 10 }}
           className="rounded-2xl border-3 border-ink bg-hunter px-8 py-5 font-display text-2xl uppercase tracking-wide text-ivory shadow-[6px_6px_0_#221d18]"
         >
-          You survived. 🏁
+          That&rsquo;s the weekend.
         </motion.div>
       </div>
     </div>

@@ -7,37 +7,37 @@ const TERMS = [
   {
     term: "Darty",
     say: "/dar·tee/",
-    def: "Day + party. Same fun, but with sunscreen. Features cornhole, music, and actual conversations you can hear.",
+    def: "Day + party. The same party, moved to the afternoon — cornhole, music, and sunshine.",
     color: "bg-cardinal text-ivory",
   },
   {
     term: "The Haus",
     say: "/hows/",
-    def: "The Phi Psi chapter house. Where your kid “lives” and where Thursday's cookout goes down.",
+    def: "The Phi Psi chapter house — home base for the brothers, and for Thursday's cookout.",
     color: "bg-hunter text-ivory",
   },
   {
     term: "Pumptown",
     say: "/pump·town/",
-    def: "A small party house with an outsized legacy. Known for playing the throwback pop anthems everyone pretends not to know every word to.",
+    def: "A small party house with an outsized reputation, known for its sing-along pop playlists.",
     color: "bg-tan text-ink",
   },
   {
     term: "Pole One",
     say: "/pohl won/",
-    def: "The house by the river. Prime territory for BBQ, chilling, and pretending you might jump in the water (you won't).",
+    def: "The house down by the river — the go-to spot for BBQ and taking it easy.",
     color: "bg-sky text-ink",
   },
   {
     term: "Cookout",
     say: "/kook·out/",
-    def: "Lunch, outside, off a grill. Burgers, BBQ, and someone's dad quietly taking over tongs duty within 20 minutes.",
+    def: "Lunch outdoors, off the grill: burgers, BBQ, and lawn chairs.",
     color: "bg-ink text-ivory",
   },
   {
     term: "Mashup Bar",
     say: "/mash·up bar/",
-    def: "The Saturday finale where songs — and generations — get blended together. Parents welcome on the dance floor. Encouraged, even.",
+    def: "Saturday's closer — mashed-up music with parents and students on the same dance floor.",
     color: "bg-cardinal text-ivory",
   },
 ];
@@ -58,7 +58,7 @@ export default function Lingo() {
             transition={{ delay: 0.5, type: "spring", stiffness: 110, damping: 14 }}
             className="mx-auto mt-4 max-w-md text-lg font-medium text-ink/70"
           >
-            Study up now so you can nod knowingly all weekend.
+            The terms you&rsquo;ll hear all weekend, translated.
           </motion.p>
         </div>
 

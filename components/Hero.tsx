@@ -48,8 +48,8 @@ export default function Hero() {
           transition={{ delay: 1.6, type: "spring", stiffness: 100, damping: 14 }}
           className="mt-6 max-w-md text-lg font-medium text-ink/70"
         >
-          Three days in Lexington, Virginia. Burgers, cornhole, questionable
-          singing — and your kid pretending they always make their bed.
+          Three days in Lexington, Virginia with the brothers of Phi Kappa Psi
+          — a cookout, a darty, and a night at the mashup bar.
         </motion.p>
 
         <motion.a
@@ -59,7 +59,7 @@ export default function Hero() {
           transition={{ delay: 1.85, type: "spring", stiffness: 200, damping: 12 }}
           className="mt-8 rounded-full border-3 border-ink bg-ink px-8 py-3 font-display text-ivory uppercase tracking-wider transition hover:bg-cardinal"
         >
-          Walk the plan ↓
+          See the plan ↓
         </motion.a>
       </div>
 

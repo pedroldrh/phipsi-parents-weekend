@@ -9,7 +9,7 @@ const Shirt = dynamic(() => import("./Shirt"), {
   ssr: false,
   loading: () => (
     <div className="flex h-full items-center justify-center font-script text-3xl text-ink/40">
-      steaming the tee…
+      loading the tee…
     </div>
   ),
 });
@@ -23,10 +23,10 @@ export default function ShirtSection() {
         {/* copy */}
         <div>
           <Wiggly text="the merch" className="font-script text-4xl text-cardinal md:text-5xl" />
-          <h2 className="mt-2 font-display uppercase leading-[0.95] text-[clamp(2.6rem,6.5vw,5.2rem)]">
-            <Wiggly text="One Tee To" />
+          <h2 className="mt-2 font-display uppercase leading-[0.95] text-[clamp(2.2rem,7vw,5.2rem)]">
+            <Wiggly text="The Weekend" />
             <br />
-            <Wiggly text="Prove It" className="text-hunter" delay={0.35} />
+            <Wiggly text="Tee" className="text-hunter" delay={0.35} />
           </h2>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -35,9 +35,9 @@ export default function ShirtSection() {
             transition={{ delay: 0.5, type: "spring", stiffness: 120, damping: 14 }}
           >
             <p className="mt-6 max-w-md text-lg leading-relaxed font-medium text-ink/75">
-              The official Parents Weekend tee: ΦΚΨ on the chest, and the whole
-              darty — house, flag, cornhole and all — printed across the back.
-              Spin it around and check it out before you commit.
+              The official Parents Weekend shirt: ΦΚΨ on the chest, and the
+              full darty scene — house, flag, cornhole and all — printed
+              across the back. Drag to spin it and see both sides.
             </p>
             <ul className="mt-6 space-y-2 text-base font-semibold">
               <li className="flex items-center gap-3">
@@ -54,7 +54,7 @@ export default function ShirtSection() {
               </li>
             </ul>
             <p className="mt-8 inline-block -rotate-2 rounded-xl border-3 border-ink bg-tan px-6 py-3 font-display uppercase tracking-wide shadow-[5px_5px_0_#221d18]">
-              Grab yours at the cookout →
+              Available at Thursday&rsquo;s cookout →
             </p>
           </motion.div>
         </div>
