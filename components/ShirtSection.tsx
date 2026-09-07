@@ -35,22 +35,22 @@ export default function ShirtSection() {
             transition={{ delay: 0.5, type: "spring", stiffness: 120, damping: 14 }}
           >
             <p className="mt-6 max-w-md text-lg leading-relaxed font-medium text-ink/75">
-              The official Parents Weekend shirt: ΦΚΨ on the chest, and the
-              full darty scene — house, flag, cornhole and all — printed
-              across the back. Drag to spin it and see both sides.
+              The official Parents Weekend shirt: ΦΚΨ on the pocket, and the
+              full scene — the house, cornhole, and the parents themselves —
+              printed across the back. Drag to spin it and see both sides.
             </p>
             <ul className="mt-6 space-y-2 text-base font-semibold">
               <li className="flex items-center gap-3">
-                <span className="h-3 w-3 rounded-full border-2 border-ink bg-ivory-deep" />
-                Comfort Colors 1717 — Ivory
+                <span className="h-3 w-3 rounded-full border-2 border-ink bg-white" />
+                Comfort Colors heavyweight pocket tee — White
               </li>
               <li className="flex items-center gap-3">
                 <span className="h-3 w-3 rounded-full border-2 border-ink bg-cardinal" />
-                Front: ΦΚΨ left chest
+                Front: ΦΚΨ Parent&rsquo;s Weekend on the pocket
               </li>
               <li className="flex items-center gap-3">
                 <span className="h-3 w-3 rounded-full border-2 border-ink bg-hunter" />
-                Back: full 12″ darty scene
+                Back: Parent&rsquo;s Weekend scene, Phi Psi 2026
               </li>
             </ul>
             <a
