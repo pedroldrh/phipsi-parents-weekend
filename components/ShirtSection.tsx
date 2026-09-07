@@ -53,8 +53,16 @@ export default function ShirtSection() {
                 Back: full 12″ darty scene
               </li>
             </ul>
-            <p className="mt-8 inline-block -rotate-2 rounded-xl border-3 border-ink bg-tan px-6 py-3 font-display uppercase tracking-wide shadow-[5px_5px_0_#221d18]">
-              Available at Thursday&rsquo;s cookout →
+            <a
+              href="https://group-orders.freshprints.com/store?id=189691"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-block -rotate-2 rounded-xl border-3 border-ink bg-tan px-6 py-3 font-display uppercase tracking-wide shadow-[5px_5px_0_#221d18] transition hover:bg-cardinal hover:text-ivory"
+            >
+              Order the tee →
+            </a>
+            <p className="mt-4 text-sm font-semibold text-ink/60">
+              Orders go through Fresh Prints. Also available at Thursday&rsquo;s cookout.
             </p>
           </motion.div>
         </div>
