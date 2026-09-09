@@ -13,13 +13,13 @@ const TERMS = [
   {
     term: "The Haus",
     say: "/hows/",
-    def: "The Phi Psi chapter house — home base for the brothers, Thursday's cookout, and Saturday's Mashup Bar.",
+    def: "The Phi Psi chapter house — home base for the brothers, Thursday's cookout, the start of Friday's darty, and Saturday's Mashup Bar.",
     color: "bg-hunter text-ivory",
   },
   {
     term: "Pumptown",
     say: "/pump·town/",
-    def: "A small party house with an outsized reputation, known for its sing-along pop playlists.",
+    def: "A small party house with an outsized reputation, known for its sing-along pop playlists. Where Friday's darty ends up after the house.",
     color: "bg-tan text-ink",
   },
   {
