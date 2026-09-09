@@ -22,7 +22,7 @@ export default function ShirtSection() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:px-12">
         {/* copy */}
         <div>
-          <Wiggly text="the merch" className="font-script text-4xl text-cardinal md:text-5xl" />
+          <Wiggly text="the merch" className="font-script text-4xl text-cardinal md:text-5xl" unit="word" />
           <h2 className="mt-2 font-display uppercase leading-[0.95] text-[clamp(2.2rem,7vw,5.2rem)]">
             <Wiggly text="The Weekend" />
             <br />

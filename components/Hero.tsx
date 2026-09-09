@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 text-center">
         <Wiggly
           text="Phi Kappa Psi"
-          className="font-script text-cardinal text-4xl md:text-6xl"
+          className="font-script text-cardinal text-4xl md:text-6xl" unit="word"
           delay={0.3}
           stagger={0.05}
         />

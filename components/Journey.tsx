@@ -201,7 +201,7 @@ export default function Journey() {
     <div id="plan" ref={ref} className="relative">
       {/* section intro */}
       <div className="mx-auto max-w-4xl px-6 pt-28 pb-10 text-center">
-        <Wiggly text="the plan" className="font-script text-4xl text-cardinal md:text-5xl" />
+        <Wiggly text="the plan" className="font-script text-4xl text-cardinal md:text-5xl" unit="word" />
         <h2 className="mt-2 font-display uppercase leading-none text-[clamp(2.1rem,8.5vw,6.5rem)]">
           <Wiggly text="Three Days." />
           <br />

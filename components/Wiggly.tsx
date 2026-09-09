@@ -8,6 +8,12 @@ type WigglyProps = {
   delay?: number;
   stagger?: number;
   once?: boolean;
+  /**
+   * "letter" (default) animates each character. Use "word" for connected
+   * script faces (Yellowtail) — splitting those per letter breaks the
+   * joining strokes and makes the text illegible, especially on mobile.
+   */
+  unit?: "letter" | "word";
 };
 
 /**
@@ -21,9 +27,14 @@ export default function Wiggly({
   delay = 0,
   stagger = 0.032,
   once = true,
+  unit = "letter",
 }: WigglyProps) {
   const words = text.split(" ");
   let letterIndex = 0;
+  const pieces = (word: string, isLast: boolean) => {
+    const chunk = isLast ? word : word + " ";
+    return unit === "word" ? [chunk] : Array.from(chunk);
+  };
   return (
     <span className={className} aria-label={text} role="text">
       {words.map((word, w) => (
@@ -47,7 +58,7 @@ export default function Wiggly({
                   stiffness: 320,
                   damping: 11,
                   mass: 0.7,
-                  delay: delay + i * stagger,
+                  delay: delay + i * (unit === "word" ? stagger * 3 : stagger),
                 }}
               >
                 {ch}

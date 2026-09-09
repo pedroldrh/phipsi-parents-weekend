@@ -47,7 +47,7 @@ export default function Lingo() {
     <section className="border-y-3 border-ink bg-ivory-deep py-28">
       <div className="mx-auto max-w-6xl px-6 md:px-12">
         <div className="text-center">
-          <Wiggly text="a glossary for parents" className="font-script text-4xl text-cardinal md:text-5xl" />
+          <Wiggly text="a glossary for parents" className="font-script text-4xl text-cardinal md:text-5xl" unit="word" />
           <h2 className="mt-2 font-display uppercase leading-none text-[clamp(2.6rem,7vw,5.5rem)]">
             <Wiggly text="Learn The Lingo" />
           </h2>
