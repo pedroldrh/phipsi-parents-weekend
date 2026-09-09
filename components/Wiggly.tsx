@@ -39,12 +39,13 @@ export default function Wiggly({
     <span className={className} aria-label={text} role="text">
       {words.map((word, w) => (
         <span key={w} aria-hidden className="inline-block whitespace-nowrap">
-          {Array.from(w < words.length - 1 ? word + " " : word).map((ch) => {
+          {pieces(word, w === words.length - 1).map((ch) => {
             const i = letterIndex++;
             return (
               <motion.span
                 key={i}
-                className="inline-block whitespace-pre will-change-transform"
+                /* padding + matching negative margin keeps layout identical but enlarges the paint box: iOS Safari composites each transformed span into its own layer and clips script ascenders/descenders that overflow the tight line box */
+                className="inline-block whitespace-pre will-change-transform px-[0.15em] -mx-[0.15em] py-[0.4em] -my-[0.4em]"
                 initial={{
                   opacity: 0,
                   y: "0.7em",
