@@ -48,7 +48,7 @@ export default function Hero() {
           transition={{ delay: 1.6, type: "spring", stiffness: 100, damping: 14 }}
           className="mt-6 max-w-md text-lg font-medium text-ink/70"
         >
-          Three days in Lexington, Virginia with the brothers of Phi Kappa Psi
+          October 1&ndash;3 in Lexington, Virginia with the brothers of Phi Kappa Psi
           — a cookout, a darty, and a night at the mashup bar.
         </motion.p>
 

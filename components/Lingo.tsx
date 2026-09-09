@@ -13,7 +13,7 @@ const TERMS = [
   {
     term: "The Haus",
     say: "/hows/",
-    def: "The Phi Psi chapter house — home base for the brothers, and for Thursday's cookout.",
+    def: "The Phi Psi chapter house — home base for the brothers, Thursday's cookout, and Saturday's Mashup Bar.",
     color: "bg-hunter text-ivory",
   },
   {
